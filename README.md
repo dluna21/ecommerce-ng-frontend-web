@@ -1,8 +1,7 @@
 
 Reset de css
 https://github.com/michaelwhyte/bootstrap-reboot/blob/master/bootstrap-reboot-with-comments.css
-
-
+  
 npm i bootstrap-icons --save
 
 
