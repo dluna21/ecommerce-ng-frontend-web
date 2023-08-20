@@ -1,0 +1,17 @@
+/* .app-container{
+  width: 100%;
+}
+
+.main {
+  flex: 1;
+  padding: 0px 10px 0 10px;
+
+}
+.app-max-height{
+
+  height: 100%;
+} */
+
+.init-width-content-max {
+    width: 1024px;
+}

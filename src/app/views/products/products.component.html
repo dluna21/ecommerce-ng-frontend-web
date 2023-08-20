@@ -1,0 +1,22 @@
+<div class="container">
+
+  <div>
+    <input type="text" class="form-control" [(ngModel)]="textSearch" placeholder="buscar..." />
+    <button type="button" (click)="searchProduct()" >Buscar</button>
+  </div>
+
+  <div *ngFor="let item of listProduct()">
+    <div>
+      <img [src]="item.image" [alt]="item.title" width="160" height="160">
+    </div>
+    <button type="button" (click)="preViewProduct(item.id)">Ver</button>
+  </div>
+</div>
+
+<div *ngIf="(product$ | async) as product">
+   Producto seleccionado <br>
+   <div>
+      <span>{{product.title}}</span> <br>
+      <span>{{product.description}}</span>
+   </div>
+</div>

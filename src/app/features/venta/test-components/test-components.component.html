@@ -1,0 +1,114 @@
+<h4>
+
+    Flex</h4>
+<div class="flex flex-row bg-yellow-300 h-60 align-items-start flex-wrap">
+    <div class="bg-orange-300 w-1/2 lg:w-1/4 h-20">
+        <div class="flex flex-col bg-amber-700 h-full">
+            <div class="bg-slate-100 h-1/2">1</div>
+            <div class="bg-slate-400 h-1/2">2</div>
+        </div>
+    </div>
+    <div class="bg-blue-300 w-1/2 lg:w-1/4 h-20">2</div>
+    <div class="bg-sky-600 w-1/2 lg:w-1/4  h-20">3</div>
+    <div class="bg-green-300 w-1/2 lg:w-1/4 h-20">4</div>
+</div>
+
+<h4>Grid</h4>
+<div>
+    <div class="grid grid-cols-4 gap-2">
+        <div class="border border-blue-500">1</div>
+        <div class="border border-blue-500">2</div>
+        <div class="border border-blue-500">3</div>
+        <div class="border border-blue-500">4</div>
+        <div class="border border-blue-500">5</div>
+    </div>
+</div>
+
+
+<h4>Columns</h4>
+<div>
+    <div class="columns-4">
+        <div class="border border-blue-500">1</div>
+        <div class="border border-blue-500">2</div>
+        <div class="border border-blue-500">3</div>
+        <div class="border border-blue-500">4</div>
+        <!-- <div class="border border-blue-500">5</div> -->
+    </div>
+</div>
+
+<h4>Padding</h4>
+
+<div class="flex flex-row bg-orange-300 px-4 py-2">
+    <div class="w-1/4 bg-blue-500">1</div>
+    <div class="w-1/4 bg-blue-500">2</div>
+    <div class="w-1/4 bg-blue-500">3</div>
+    <div class="w-1/4 bg-blue-500">4</div>
+</div>
+
+<h4>Margin</h4>
+
+<div class="flex flex-row bg-orange-300 px-4 py-4 my-md-4">
+    <div class="w-1/4 bg-blue-500">1</div>
+    <div class="w-1/4 bg-blue-500">2</div>
+    <div class="w-1/4 bg-blue-500">3</div>
+    <div class="w-1/4 bg-blue-500">4</div>
+</div>
+<div class="flex flex-row bg-orange-300 px-4 py-2">
+    <div class="w-1/4 bg-blue-500">1</div>
+    <div class="w-1/4 bg-blue-500">2</div>
+    <div class="w-1/4 bg-blue-500">3</div>
+    <div class="w-1/4 bg-blue-500">4</div>
+</div>
+
+
+<h4>
+    Position Relative</h4>
+<div class="relative bg-yellow-300">
+    <div>Static parent</div>
+
+    <div class="absolute">
+        <p>Absolute child 11111111</p>
+    </div>
+</div>
+<!-- <div class="absolute bg-amber-800">
+
+  <div class="relative bg-blue-400"> position absolute 1</div>
+  <div class="absolute bottom-0 left-0 w-30 bg-green-300"> position absolute 2</div>
+</div> -->
+
+<!-- -------------------------------
+  -------------Concepto flex-------------
+  flex: es una propiedad de css, que indica la capacidad de un elemnto flexible para alterar sus dimensiones y llenar el espacio disponible.
+  los elementos flexibles pueden ser estirados para utilizar el espacio disponible proporcional a su factor de crecimiento flexible o su factor
+  de contraccion flexible para evitar desbordamiento.
+
+  1.- flex direction: permite indicar la direccin de los items.
+    1.1.- flex-row -> coloca los item en una fila.
+    1.2.- flex-col -> coloca los item en una columna.
+
+  2.- flex: propiedades flex de los items:
+    2.1.- flex-initial -> Permite encogerse pero no crecer, toma en cuenta su valor inicial.
+    2.2.- flex-1 -> Permite crecer y encogerse como lo necesite, ignora su valor inicial.
+    2.3.- flex-auto -> Permite crecer y encogerse como lo necesite, tomando en cuenta su valor inicial.
+    2.4.- flex-none -> No permite crecer o encoger el item.
+
+  3.-flex wrap: permite a los items colocarse en la parte inferior solo si desbordan el ancho de su contenedor.
+     3.1.- flex-wrap
+
+  4.- flex grow: permite al item crecer todo el espacio dispnible.
+      4.1 flex-grow
+  5.- flex shrink:
+      5.1 flex-shrink: permite a un elemento encogerse si es necesario.
+      5.2 flex-noshrink: evita que un elemento se encoja.
+
+-------------Concepto Sizing-------------
+  w-screen : ocupa todo el viewport de la pantalla (100vw).
+  w-full: ocupa el 100% del ancho, el espacio ocupado es calculado según el ancho de su padre contenedor.
+  w-auto: ocupa el ancho segun los items contenidos, el espacio ocupado es calculado como la suma de anchos del primer y ultimo elemento contenido, no se calcula según el ancho de su padre contenedor.
+  w-1/2: ocupa el porcentaje asignado, el espacio ocupado es calculado como un porcentaje del ancho del padre contenedor.
+  w-min: ocupa el minimo contenido.
+  w-max: ocupa el maximo contenido.
+  ----------------------------------------
+
+
+------------------------------------>

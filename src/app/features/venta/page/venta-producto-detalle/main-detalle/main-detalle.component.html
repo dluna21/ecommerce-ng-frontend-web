@@ -1,0 +1,127 @@
+
+<div class="comp-main">
+<div class="comp-panel mt-4">
+  <div class="flex flex-row">
+    <div class="seccion-1">
+     <div id="carousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item" *ngFor="let item of _header_list_carousel" #carouselItem>
+              <img class="img-product" src="{{item.urlImg}}" alt="Producto {{item.nombre}}">
+            </div>
+          </div>
+          <a class="carousel-control-prev" (click)="btn_prevItem()" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next"  (click)="btn_nextItem()" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div>
+
+    <div  class="carousel-mini">
+      <div class="carousel-mini-tira">
+        <div class="carousel-tira-item" *ngFor="let item of _header_list_carousel; let index=index" #carouselItemMini >
+          <img class="img-product-mini" src="{{item.urlImg}}" alt="Producto {{item.nombre}}" (click)="btn_SelecItem(item)">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="seccion-2 flex-grow-1">
+    <div class="wraper-venta">
+          <div class="venta-cab">
+            <div class="titulo-venta-cab">
+              <div class="flex-fila-between">
+                <span class="lbl-brand-product">GENERICO</span>
+                <span class="lbl-codigo-product">Código: 120631165</span>
+              </div>
+              <span class="lbl-product-name">Cinta LED con Luces RGB x 5 metros</span>
+            </div>
+            <div>
+              <ngb-rating [max]="5" style="color: #ffc000!important;"></ngb-rating>
+            </div>
+          </div>
+          <div class="divider-line"></div>
+          <div class="venta-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="wraper-caracteristica-destacada">
+                  <div class="caracteristica-destacada">
+                    <div class="cd-title">Características destacadas</div>
+                    <div class="cd-lista">
+                      <ul>
+                        <li><strong>Capacidad (lt): 1.25</strong></li>
+                        <li><strong>Número de velocidades: 3</strong></li>
+                        <li><strong>Material del recipiente: Vidrio</strong></li>
+                        <li><strong>Material de las cuchillas: Acero Inoxidable</strong></li>
+                      </ul>
+                    </div>
+                    <div class="cd-ver-mas">
+                      <span>Ver más características</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                  <div class="wrapper-precio-venta">
+                    <span class="lbl-precio-venta">S/ 17.50</span>
+                  </div>
+                  <div class="btn-group-spinner">
+                    <div class="wraper-btn-spinner">
+                      <button class="btn-spinner">-</button>
+                      <input class="input-spinner-number" type="text" maxlength="2" [ngModel]="inputSpinner"/>
+                      <button class="btn-spinner" (click)="add()">+</button>
+                    </div>
+                    <div class="lbl-unit-max">Máximo 20 unidades.</div>
+                  </div>
+                  <a href="#" class="btn btn-agregar-carrito rounded-pill">Agregar al carrro</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="entrega-rapida">
+                  <img src="../../../../../../assets/img/entrega-rapida.png" width="30" height="30">
+                  <div class="text-entrega-rapida">
+                    <span class="lbl-despacho">Despacho a domicilio</span>
+                    <span class="lbl-disponibilidad">Ver disponibilidad</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+
+              </div>
+            </div>
+
+
+          </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!--Informacion del producto-->
+    <div class="comp-panel mt-4" style="padding-left: 60px;padding-right: 60px;">
+        <div class="flex flex-column flex-wrap w-25" style="padding-top: 20px;">
+          <app-titulo-subrayado [titulo]="tituloEspecificacion"   colorLine = "#333"
+          fontFamily = "'Lato', sans-serif"
+          fontBold = "500"
+          fontSize = "1.2rem"></app-titulo-subrayado>
+          <app-table-especificacion [lista]="listaEspecificacion" ></app-table-especificacion>
+        </div>
+
+          <div class="flex flex-column flex-wrap flex-grow-1 mx-3" style="padding-top: 20px; padding-left: 20px;">
+            <app-titulo-subrayado [titulo]="tituloInformacionProducto"   colorLine = "#333"
+            fontFamily = "'Lato', sans-serif"
+            fontBold = "500"
+            fontSize = "1.2rem"></app-titulo-subrayado>
+            <div class="panel">
+              Smartphone Moto E22 4GB 128 GB Gris
+            </div>
+          </div>
+
+    </div>
+
+</div>
+

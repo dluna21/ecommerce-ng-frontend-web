@@ -1,0 +1,99 @@
+/* img {
+    width: 50%;
+    height: 277px;
+    object-fit: cover;
+    object-position: bottom;
+} */
+
+
+/* Estilos adicionales para los elementos de búsqueda y lista de productos */
+
+.margen-figure {
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.product-item {
+    margin-bottom: 10px;
+    padding: 5px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 18rem;
+    padding-top: 10px;
+}
+
+.card-img-top {
+    width: 227px;
+    height: 227px;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #4A4A4A;
+}
+
+.lbl-price {
+    color: #717171;
+}
+
+.card-title-marca {
+    font-size: 13px;
+    line-height: 12px;
+    color: #767676;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+}
+
+.card-title-modelo {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #4A4A4A;
+}
+
+.comp-card-footer {
+    width: 100%;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.comp-line-bottom {
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: 1px solid #eee;
+    height: 2px;
+}
+
+.btn-carrito {
+    width: 85%;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #FF6200;
+    color: #fff;
+    text-transform: none;
+    border-radius: 30px;
+    line-height: 1.2;
+    text-decoration: none;
+}

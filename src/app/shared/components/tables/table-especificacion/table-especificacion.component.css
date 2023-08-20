@@ -1,0 +1,10 @@
+.space-row{
+  padding: 10px;
+}
+.custom-table:nth-child(even) {
+  background-color:  #fff;
+}
+
+.custom-table:nth-child(odd) {
+  background-color: #eee;
+}
