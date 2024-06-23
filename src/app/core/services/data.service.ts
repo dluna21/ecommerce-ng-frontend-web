@@ -16,4 +16,9 @@ export class DataService {
     var request$ = this.http.get<ProductModel[]>('https://fakestoreapi.com/products?limit=100');
     return  request$;
   }
+  getDataTestxNumero(limit:number):Observable<ProductModel[]>{
+    console.log('request api');
+    var request$ = this.http.get<ProductModel[]>('https://fakestoreapi.com/products?limit='+limit);
+    return  request$;
+  }
 }

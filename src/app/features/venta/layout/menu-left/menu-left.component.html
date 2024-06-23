@@ -1,0 +1,29 @@
+<div class="d-flex flex-row">
+    <button (click)="toggleMenu()" class="block text-gray-500 hover:text-white focus:text-white focus:outline-none">
+    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+      <path *ngIf="!menuOpen" fill-rule="evenodd" clip-rule="evenodd" d="M4 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 5h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 5h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+      <path *ngIf="menuOpen" fill-rule="evenodd" clip-rule="evenodd" d="M4 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 5h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 5h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+    </svg>
+  </button>
+    <span class="txt-menu">Menu</span>
+</div>
+
+<div class="wraper-left h-full w-full" [ngClass]="{'hidden': !menuOpen}">
+    <div class="content-menu">
+        <div class="cab-menu">
+            <div class="flex-cab-menu">
+                <span>Bienvenido</span>
+                <div class="botonCerrar" (click)="toggleMenu()">X</div>
+            </div>
+        </div>
+        <div class="det-menu">
+            <div class="list-item-menu">
+                <div class="item-menu rounded">
+                    <span>Inicio</span> </div>
+                <div class="item-menu rounded"> Promociones </div>
+                <div class="item-menu rounded"> Contactos </div>
+            </div>
+        </div>
+
+    </div>
+</div>

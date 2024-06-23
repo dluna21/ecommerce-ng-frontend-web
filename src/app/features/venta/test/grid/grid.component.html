@@ -1,0 +1,38 @@
+<!-- <ngb-pagination *ngIf="true" [collectionSize]="totalItems" [(page)]="page" (pageChange)="loadPage($event)">
+</ngb-pagination> -->
+<app-paginacion [totalPaginas]="41" [tamanioPagina]="25" [total]="1007" (CargarNroPagina)="CargarDatos($event)"></app-paginacion>
+
+<!-- Aquí listarás los productos, puedes hacerlo dinámicamente con JavaScript o manualmente con HTML -->
+<div class="flex flex-row flex-wrap bg-gray-100 pl-2 md:pl-0">
+
+    <!-- parent de figuras -->
+    <div *ngFor="let item of listProduct();let index = index" class="flex w-1/2 md:w-1/4">
+
+        <div class="flex flex-col w-full bg-white mr-2 mt-2 pb-3">
+
+            <!-- h-3/6 -->
+            <div class="relative w-48 h-48 mb-3">
+                <img [ngSrc]="item.image" [alt]="item.title" fill>
+            </div>
+            <div class=" md:border-t border-t-gray-200"></div>
+
+            <div class="flex flex-col w-auto py-3 px-2 ">
+                <div>
+                    <h4 class="text-sm font-normal text-gray-500">Pierre Cardini</h4>
+                </div>
+                <div>
+                    <span class="text-md-start font-semibold leading-tight  text-gray-900" style="line-height: 20px;">{{item.title}}</span>
+                </div>
+                <div>
+                    <span class="text-lg text-gray-900"> S/. {{item.price}}</span>
+                </div>
+            </div>
+            <div class="mt-auto mx-auto w-max">
+                <button class="text-sm font-semibold px-2 py-2 mx-4 text-white bg-orange-600 rounded-full shadow-md">
+            Agregar al carrro
+          </button>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -10,10 +10,12 @@ import { BlockUIModule } from 'ng-block-ui';
 import { VentaModule } from './features/venta/venta.module';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    ProductsComponent
+    ProductsComponent,
+
   ],
   imports: [
     BlockUIModule.forRoot(),

@@ -1,0 +1,31 @@
+/*
+  Aqui se crearan todos los botones bases de la aplicacion como por ejemplo: guardar, cancelar, eliminar etc.
+   estos botones permitiran  realizar acciones en el sistema y permitira personalizar la aplicacion facilmente.
+*/
+
+
+/* Boton para Guardar el registro actual en la base de datos */
+
+:root {
+    --color-principal: #3498db;
+    --color-secundario: #2ecc71;
+    --color-terciario: #f39c12;
+    --color-cuaternario: #e74c3c;
+    --color-quinterno: #9b59b6;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn__save {
+    background-color: blue;
+}
+
+.btn__cancel {
+    background-color: gray;
+}
+
+.btn__delete {
+    background-color: red;
+}

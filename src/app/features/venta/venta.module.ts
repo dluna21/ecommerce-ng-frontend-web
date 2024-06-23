@@ -15,6 +15,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { VentaProductoDetalleTailwindComponent } from './page/venta-producto-detalle-tailwind/venta-producto-detalle-tailwind.component';
 import { MainVentaTailwindComponent } from './page/main-venta-tailwind/main-venta-tailwind.component';
+import { GridComponent } from './test/grid/grid.component';
+import { PaginacionComponent } from './test/paginacion/paginacion.component';
+import { MenuLeftComponent } from './layout/menu-left/menu-left.component';
 
 
 @NgModule({
@@ -27,7 +30,10 @@ import { MainVentaTailwindComponent } from './page/main-venta-tailwind/main-vent
     HeaderComponent,
     FooterComponent,
     VentaProductoDetalleTailwindComponent,
-    MainVentaTailwindComponent
+    MainVentaTailwindComponent,
+    GridComponent,
+    PaginacionComponent,
+    MenuLeftComponent
   ],
   imports: [
     CommonModule,

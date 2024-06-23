@@ -5,6 +5,7 @@ import { MainDetalleComponent } from './page/venta-producto-detalle/main-detalle
 import { VentaProductoDetalleTailwindComponent } from './page/venta-producto-detalle-tailwind/venta-producto-detalle-tailwind.component';
 import { MainVentaTailwindComponent } from './page/main-venta-tailwind/main-venta-tailwind.component';
 import { TestComponentsComponent } from './test-components/test-components.component';
+import { GridComponent } from './test/grid/grid.component';
 
 
 const childRoutes: Routes = [
@@ -22,6 +23,11 @@ const childRoutes: Routes = [
     path: 'test',
     // canActivate: [PreseleccionadoGuard, CompletadaGuard,CierreGuard, SeccionesGuard],
     component: TestComponentsComponent
+  },{
+    path: 'test-grid',
+    // canActivate: [PreseleccionadoGuard, CompletadaGuard,CierreGuard, SeccionesGuard],
+
+    component: GridComponent
   },
   {
     path: 'producto-detalle',
